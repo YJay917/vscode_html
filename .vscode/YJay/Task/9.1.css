@@ -1,0 +1,55 @@
+    /* 焦点图容器：相对定位，作为子元素绝对定位的参考 */
+    .focus-container {
+      position: relative; 
+      width: 500px;      /* 可按需调整宽度 */
+      height: 300px;     /* 可按需调整高度 */
+      border: 2px solid #4682B4;
+      margin: 0 auto;    /* 让容器水平居中，可选 */
+      overflow: hidden;  /* 隐藏超出容器的内容（如图片滑动时） */
+    }
+    /* 焦点图图片：可替换为实际图片，这里用背景色模拟 */
+    .focus-img {
+      width: 100%;
+      height: 100%;
+      background-color: #B0E0E6; /* 浅蓝色模拟图片 */
+    }
+    /* 左右箭头通用样式 */
+    .arrow {
+      position: absolute; /* 绝对定位，基于 .focus-container */
+      top: 50%;           /* 垂直居中 */
+      transform: translateY(-50%); /* 精细垂直居中 */
+      width: 30px;
+      height: 30px;
+      background-color: #B0C4DE;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      /* 让箭头外观更接近示例（可选，可替换为图标字体或图片） */
+      font-size: 20px;
+      color: #fff;
+    }
+    /* 左箭头位置 */
+    .arrow-left {
+      left: 10px; 
+    }
+    /* 右箭头位置 */
+    .arrow-right {
+      right: 10px;
+    }
+    /* 小圆点容器：水平居中、底部定位 */
+    .dot-container {
+      position: absolute; 
+      bottom: 10px;       
+      left: 50%;          
+      transform: translateX(-50%); 
+      display: flex;
+      gap: 8px; /* 圆点之间的间距 */
+    }
+    /* 小圆点样式 */
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: #FFDAB9; /* 浅橙色模拟圆点 */
+      border-radius: 50%;
+      cursor: pointer;
+    }
