@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/* 主容器：控制垂直布局 */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 占满视口 */
+}
+/* 内容区：拆分左右 */
+.main {
+  flex: 1; /* 占满剩余空间 */
+  display: flex;
+}
+/* 左侧固定栏 */
+.sidebar {
+  width: 200px;
+  background: #4DB6AC;
+}
+/* 右侧自适应 */
+.content {
+  flex: 1;
+  background: #D17B7B;
+  height: 600px;
+}
+/* 页脚 */
+.footer {
+  background: #AED581;
+  height: 50px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="main">
+    <div class="sidebar">左侧固定200px</div>
+    <div class="content">右侧自适应</div>
+  </div>
+  <div class="footer">页脚始终底部</div>
+</div>
+</body>
+</html>

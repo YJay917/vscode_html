@@ -1,0 +1,109 @@
+
+* {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  font-family: "宋体", sans-serif;  
+}  
+body {  
+  background: f8f9fa;  
+  padding: 2rem;  
+}  
+.table-container {  
+  max-width: 1200px;  
+  margin: 0 auto;  
+  overflow-x: auto; /* 小屏幕横向滚动 */  
+}  
+ 
+.table-title {  
+  text-align: left;  
+  color: 2c3e50;  
+  margin-bottom: 1.5rem;  
+  font-size: 24px;  
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); 
+  background: rgb(234, 234, 234); 
+}  
+.news-table {  
+  width: 100%;  
+  border-collapse: collapse; /* 合并边框 */  
+  background: white;  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+}  
+
+/* 表头样式 */  
+.news-table th {  
+  background: 3498db;  
+  color: white;  
+  padding: 1rem;  
+  text-align: left;  
+  font-weight: bold;  
+}  
+
+/* 数据行样式 */  
+.news-table td {  
+  padding: 1rem;  
+  border-bottom: 1px solid eee;  
+  color: 34495e;  
+}  
+
+/* 悬停效果 */  
+.news-table tbody tr:hover {  
+  background: f1f8ff;  
+}  
+
+.category-tag {  
+  display: inline-block;  
+  padding: 0.3rem 0.8rem;  
+  border-radius: 12px;  
+  font-size: 12px;  
+  background: e74c3c;  
+  color: white;  
+}  
+
+/* 不同分类颜色 */  
+.category-tag[data-category="技术"] { background: 3498db; }  
+.category-tag[data-category="行业"] { background: 2ecc71; }  
+   
+@media (max-width: 768px) {  
+  .news-table {  
+    font-size: 14px;  
+  }  
+  .news-table th,  
+  .news-table td {  
+    padding: 0.8rem;  
+  }  
+}  
+
+ /* 外部样式表 */  
+ .news-table td { color: 333; }  
+
+ /* 内嵌样式（更高优先级） */  
+   .news-table td { color: e74c3c !important; }    
+ body {  
+   font-size: 16px;  
+   line-height: 1.5;  
+ }  
+ /* 表格继承 body 的字体和行高 */  
+ .header {
+    background-color: green;
+    color: white;
+    display: flex;
+    /* 容器，规定元素如何显示，flex布局属性 */
+    justify-content: space-around;
+    /* 弹性容器 space-around项目周围间隔相等 */
+    align-items: center;
+    /* 项目在交叉轴上居中对齐 */
+    padding: 10px 20px;
+    /* 页边距  上下 左右*/
+}
+.right-content a {
+    color: white;
+    text-decoration: none;
+    /* 文本装饰效果，去除下划线 */
+    margin-right: 10px;
+    /* 右边距 */
+}
+.left-content p {
+    margin: 0;
+    /* 外边距 */
+}

@@ -1,0 +1,24 @@
+/* 全局样式 */
+* {
+  font-family: "微软雅黑";
+  line-height: 1.6;
+}
+
+/* 大标题样式 */
+h1 {
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* 新闻内容样式 */
+.news-content p {
+  text-indent: 2em;
+  font-size: 25px;
+}
+
+/* 时间样式 */
+.news-content p:last-child {
+  color: gray;
+  text-align: right;
+}

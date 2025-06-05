@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 2;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .Layout {
+            width: 100%;
+            min-width: 1200px;
+        }
+        
+        /* 头部 */
+        .head {
+            height: 80px;
+            border: 1px dashed red;
+            margin: 4px;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+        }
+        
+        /* 主体容器 */
+        .main {
+            width: 100%;
+            margin: 4px;
+            overflow: hidden;
+        }
+         /* 清除浮动 */
+        /* 三栏公共样式 */
+        .West, .Mid, .East {
+            float: left;
+            height: 400px;
+            border: 1px dashed blue;
+            padding: 20px;
+        }
+        
+        .West {
+            width: 200px;
+            margin-right: 4px;
+        }
+        
+        .Mid {
+            width: calc(100% - 426px); /* 计算中间剩余宽度 */
+            margin: 0 4px;
+        }
+        
+        .East {
+            width: 200px;
+            margin-left: 4px;
+        }
+        
+        /* 底部 */
+        .footer {
+            height: 60px;
+            border: 1px dashed green;
+            margin: 4px;
+            clear: both; /* 清除浮动 */
+            text-align: center;
+            line-height: 60px;
+        }
+
+        </style>
+</head>
+<body>
+
+<div class="Layout">
+    <!-- 头部 -->
+    <div class="head">头部</div>
+    
+    <!-- 中部 -->
+    <div class="main">
+        <div class="West">左栏</div>
+        <div class="Mid">中区</div>
+        <div class="East">右栏</div>
+    </div>
+    
+    <!-- 底部 -->
+    <div class="footer">底栏</div>
+</div>
+</body>
+</html>

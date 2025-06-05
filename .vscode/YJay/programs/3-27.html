@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>简易登录系统</title>
+    <style>
+        body { margin: 0; font-family: Arial; }
+        header, footer { background: #333; color: white; text-align: center; padding: 1em; }
+        main { padding: 20px; max-width: 400px; margin: 20px auto; }
+        
+        form > div { margin: 15px 0; }
+        label { display: block; margin: 5px 0; }
+        select, input { width: 100%; padding: 8px; border: 1px solid #ddd; }
+        button { width: 100%; padding: 10px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        input[type="radio"] { width: auto; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <header><h2>用户登录</h2></header>
+    
+    <main>
+        <form>
+            <div>
+                <label>用户类型：</label>
+                <select required>
+                    <option value="">请选择</option>
+                    <option>普通用户</option>
+                    <option>管理员</option>
+                </select>
+            </div>
+
+            <div>
+                <label>性别：</label>
+                <label><input type="radio" name="gender" required> 男</label>
+                <label><input type="radio" name="gender"> 女</label>
+            </div>
+
+            <div>
+                <label>用户名：</label>
+                <input type="text" placeholder="输入用户名" required>
+            </div>
+
+            <div>
+                <label>密码：</label>
+                <input type="password" minlength="6" required>
+            </div>
+
+            <button>立即登录</button>
+        </form>
+    </main>
+    
+    <footer><p>© 2024 简易登录系统</p></footer>
+</body>
+</html>
